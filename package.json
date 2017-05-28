@@ -1,0 +1,53 @@
+{
+  "name": "lecture-ideal-component",
+  "description": "«Дизайн-система». Идеальный компонент",
+  "version": "0.0.1",
+  "author": {
+    "name": "Roman @Realetive Ganin",
+    "url": "http://romanganin.ru/"
+  },
+  "homepage": "https://github.com/Realetive/lecture-ideal-component",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Realetive/lecture-ideal-component.git"
+  },
+  "bugs": {
+    "url": "http://github.com/Realetive/lecture-ideal-component/issues"
+  },
+  "license": "CC-BY-NC-ND-4.0",
+  "keywords": [
+    "presentation",
+    "lecture",
+    "design",
+    "markup"
+  ],
+  "files": [
+    "pictures/**",
+    "index.html",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "dependencies": {
+    "shower": "^2.1.9"
+  },
+  "devDependencies": {
+    "del": "^2.2.1",
+    "fs": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-rsync": "0.0.7",
+    "gulp-zip": "^4.0.0",
+    "merge-stream": "^1.0.0",
+    "path-exists-cli": "^1.0.0",
+    "run-sequence": "^1.2.2",
+    "shower-core": "^2.0.8"
+  },
+  "scripts": {
+    "prepare": "gulp prepare",
+    "archive": "gulp archive",
+    "publish": "gulp publish",
+    "test": "npm run prepare && ls prepared && npm run archive && path-exists archive.zip"
+  }
+}
